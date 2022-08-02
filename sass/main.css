@@ -1125,7 +1125,7 @@ ul {
   flex: 25%;
   text-align: right;
 }
-> .contact_nav_imgbox_logo {
+.contact_nav_imgbox_logo {
   height: 5.5rem;
   transition: 0.5s;
 }
