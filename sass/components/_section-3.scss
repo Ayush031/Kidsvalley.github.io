@@ -1,0 +1,86 @@
+.section_3 {
+    // border: 1px solid red;
+    margin: 1rem 6rem 4rem 6rem;
+
+    @include respond(phone-s) {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    // Section-3 Top 
+    &-Init {
+        // &--box {
+        //     // border: 1px solid black;
+        // }
+
+        &--items {
+            // border: 2px solid yellow;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &--item {
+            // border: 2px solid green;
+            flex: 0 1 33.1%;
+            height: 4rem;
+            padding-top: 1.2rem;
+            color: white;
+            letter-spacing: 1.15px;
+            word-spacing: 1px;
+            transition: all .3s;
+            cursor: pointer;
+            text-align: center;
+            // width: 24.1rem; // exact is 24.08rem
+            // background-color: $violet-1; // used in jquery
+        }
+    }
+
+    // Section-3 Bottom 
+    &-parabox {
+        // border: 1px solid blue;
+        height: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @include respond(phone) {
+            padding-bottom: 1rem;
+        }
+
+        &--imgbox {
+            // border: 1px solid black;
+            height: 100%;
+            flex: 1 1 28%;
+            margin-right: 1.5rem;
+
+            .section_3-parabox--img {
+                // border: 1px solid red;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &--para {
+            // border: 1px solid purple;
+            flex: 1 1 75%;
+            margin-top: 1rem;
+
+            .section_3-parabox--heading {
+                margin-bottom: 1rem;
+            }
+
+            .section_3-parabox--text {
+                padding-right: 3rem;
+                font-size: 1.1rem;
+                text-align: justify;
+                font-weight: 600;
+
+                @include respond(phone) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Kidsvalley</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <!-- For animations-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="https://kit.fontawesome.com/039066c5a2.js" crossorigin="anonymous"></script> <!-- To add icons -->
+    <link rel="stylesheet" href="/pages/about.html">
+    <!-- <link rel="stylesheet" href="/sass/main.css"> -->
+    <link rel="stylesheet" href="/sass/main.css">
+</head>
+
+<body>
+    <div class="row_overall row">
+        <header>
+            <div class="header">
+                <div class="header_upper">
+                    <div class="header_btnbox">
+                        <div class="header_btnbox-1">
+                            <a href="#" class="header_btnbox-btn--1">Corporate Login</a>
+                            <a href="#" class="header_btnbox-btn--1">Pay Online</a>
+                        </div>
+                        <div class="header_btnbox-2">
+                            <a href="#" class="header_btnbox-btn--2">For Admission</a>
+                            <a href="" class="separator-head" style="color: white; margin:0 3px;">|</a>
+                            <a href="#" class="header_btnbox-btn--2">Franchise Enquiry</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NAVIGATION MENU -->
+                <nav>
+                    <div class="nav">
+                        <div class="nav_imgbox">
+                            <img src="/img/school logo.png " alt="school_logo" id="school-logo" class="nav_logo">
+                        </div>
+                        <div class="nav_menu-div">
+                            <div class="nav_menu">
+                                <div class="nav_menu-dropdown">
+                                    <div class="nav_menu-item">
+                                        <a href="/index.html" class="nav_menu-item--home">Home</a>
+                                    </div>
+                                </div>
+                                <div class="nav_menu-dropdown">
+                                    <div class="nav_menu-item">
+                                        <a href="/pages/navbar/about.html" class="nav_menu-item--about">About</a>
+                                    </div>
+                                    <div class="nav_menu-dropdown-content nav_menu-dropdown-content--about">
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                    </div>
+                                </div>
+                                <div class="nav_menu-dropdown">
+                                    <div class="nav_menu-item"><a href="/pages/navbar/admission.html"
+                                            class="nav_menu-item--admission">Admissions</a></div>
+                                    <div class="nav_menu-dropdown-content nav_menu-dropdown-content--admission">
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                    </div>
+                                </div>
+                                <div class="nav_menu-dropdown">
+                                    <div class="nav_menu-item"><a href="/pages/navbar/franchise.html"
+                                            class="nav_menu-item--franchise">Franchise</a></div>
+                                    <div class="nav_menu-dropdown-content nav_menu-dropdown-content--franchise">
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                    </div>
+                                </div>
+                                <div class="nav_menu-dropdown">
+                                    <div class="nav_menu-item"><a href="/pages/navbar/branches.html"
+                                            class="nav_menu-item--branch">Branches</a></div>
+                                    <div class="nav_menu-dropdown-content nav_menu-dropdown-content--branch">
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                    </div>
+                                </div>
+                                <div class="nav_menu-dropdown">
+                                    <div class="nav_menu-item"><a href="/pages/navbar/parents.html"
+                                            class="nav_menu-item--parent">Parents</a></div>
+                                    <div class="nav_menu-dropdown-content nav_menu-dropdown-content--parent">
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                    </div>
+                                </div>
+                                <div class="nav_menu-dropdown">
+                                    <div class="nav_menu-item"><a href="/pages/navbar/gallery.html"
+                                            class="nav_menu-item--gallery">Gallery</a></div>
+                                    <div class="nav_menu-dropdown-content nav_menu-dropdown-content--gallery">
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                    </div>
+                                </div>
+                                <div class="nav_menu-dropdown">
+                                    <div class="nav_menu-item"><a href="/pages/navbar/contact.html"
+                                            class="nav_menu-item--contact">Contact&nbsp;Us</a></div>
+                                    <div class="nav_menu-dropdown-content nav_menu-dropdown-content--contact">
+                                        <a href="#">Test</a>
+                                        <a href="#">Test</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <button class="openbtn" onclick="openNav()">&#9776;</button>
+                    </div>
+                </nav>
+
+                <!-- Carousel  -->
+                <div class="header-bottom">
+                    <svg class="leftarrow">
+                        <use xlink:href="vendors\icomoon-stars\symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="rightarrow">
+                        <use xlink:href="vendors\icomoon-stars\symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <div class="carousel">
+                        <input type="radio" name="slide" class="carousel_radio-btn" id="slide1" onclick="slide1()" value=1 checked>
+                        <input type="radio" name="slide" class="carousel_radio-btn" id="slide2" value=2>
+                        <input type="radio" name="slide" class="carousel_radio-btn" id="slide3" value=3>
+                        <input type="radio" name="slide" class="carousel_radio-btn" id="slide4" value=4>
+                        <input type="radio" name="slide" class="carousel_radio-btn" id="slide5" value=5>
+
+                        <div class="carousel_nav">
+                            <label class="carousel_radio-label" for="slide-1">&nbsp;</label>
+                            <label class="carousel_radio-label" for="slide-2">&nbsp;</label>
+                            <label class="carousel_radio-label" for="slide-3">&nbsp;</label>
+                            <label class="carousel_radio-label" for="slide-4">&nbsp;</label>
+                            <label class="carousel_radio-label" for="slide-5">&nbsp;</label>
+                        </div>
+
+                        <div class="carousel_slider">
+                            <div class="carousel_slide-1 carousel_slide"></div>
+                            <div class="carousel_slide-2 carousel_slide"></div>
+                            <div class="carousel_slide-3 carousel_slide"></div>
+                            <div class="carousel_slide-4 carousel_slide"></div>
+                            <div class="carousel_slide-5 carousel_slide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--  SECTION Starts here -->
+
+        <!-- ----  Section-1  ---- -->
+        <div class="section_1">
+            <!-- <div class="row"> -->
+            <h1 class="section_heading"> Fun Creates Learning </h1>
+            <!-- </div> -->
+
+            <!--  Section-1 Bottom  -->
+            <div class="section_1-row">
+                <div class="section_1_para">
+                    <div class="section_1_para-1">
+                        <h3 class="section_1_para-title"> SPEAK-O-KIT</h3>
+                        <p class="section_1_para-text">
+                            Speak-o-kit, more commonly known as, a set of talking books & talking pens is a
+                            learning
+                            tool which was introduced for the very first time by Kids Valley. It aims to
+                            inculcate
+                            self
+                            reliance, self learning & greater retention power amongst students. It is 100%
+                            mapped
+                            with
+                            the school curriculum.
+                        </p>
+                    </div>
+                </div>
+                <div class="section_1_para">
+                    <div class="section_1_para-2">
+                        <h3 class="section_1_para-title"> ROBOTIME </h3>
+                        <p class="section_1_para-text">
+                            Robotics develops critical thinking & moreover it's a favorite activity for kids at
+                            Kids Valley. It polishes a child's thinking skills & parents are sure to observe how
+                            brilliantly their child learns to assemble blocks in the Robotime Kit. Level wise
+                            kits are specialized as per child's learning needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="section_1_para">
+                    <div class="section_1_para-3">
+                        <h3 class="section_1_para-title"> SMART CLASSES </h3>
+                        <p class="section_1_para-text">
+                            Smart Classes are must for new age education wherein children should know how to
+                            understand concepts through learning tools. It is important that a teacher portrays
+                            the academic content on-screen which will awaken all their senses to domains of new
+                            learning experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="section_1_para">
+                    <div class="section_1_para-4">
+                        <h3 class="section_1_para-title"> VIRTUAL REALITY </h3>
+                        <p class="section_1_para-text">
+                            At Kids Valley, children under the age group of 2 to 5 years learn through live
+                            examples, virtually. This is enchanting indeed! Traveling to places sitting in a
+                            classroom is possible with the VR head gears. The 3D viewing & the practicality
+                            associated to theoretical places make concepts easier.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--   SECTION-2    -->
+        <div class="section_2">
+            <!-- Section-2 top -->
+            <div class="row">
+                <h1 class="section_heading"> Kids Valley School </h1>
+            </div>
+
+            <!-- Section-2 bottom -->
+            <div class="section_2-bottom">
+                <div class="section_2-videobox">
+                    <div class="section_2-videobox--video">
+                        <iframe src="https://www.youtube.com/embed/YFlx1C8XwR0" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="section_2-para">
+                    <div class="section_2-text">
+                        Starting from 2010, Kids Valley has completed almost 12 years of successful years in
+                        education segment. Kids Valley: A place where eminence in learning is felt. The amazing part
+                        of this kind of learning is that this power and fun in learning is felt both by parents and
+                        the kids. They foresee the childhood which is not just in learning numbers and alphabets but
+                        far beyond that. Technology which has seeped deep in the Kids Valleyites is a gift which
+                        will be
+                        cherished for long. Why not moms and dads wouldn't want to join a preschool and live
+                        childhood, THE KIDS WAY!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--   SECTION 3  -->
+        <div class="section_3">
+            <!--  Section-3 Head  -->
+            <div class="row">
+                <h1 class="section_heading">Our Educational Initiatives</h1>
+            </div>
+
+            <!--  Section-3 Top  -->
+            <div class="section_3-Init--box">
+                <ul class="section_3-Init--items">
+                    <li class="section_3-Init--item section_3-Init--item-1">
+                        <span class="section_3-Init--1">AHPS</span>
+                    </li>
+
+                    <li class="section_3-Init--item section_3-Init--item-2">
+                        <span class="section_3-Init--2">PRISMART</span>
+                    </li>
+
+                    <li class="section_3-Init--item section_3-Init--item-3">
+                        <span class="section_3-Init--3">RISHIHOOD UNIVERSITY</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section-3 Bottom -->
+            <div>
+                <div class="section_3-parabox section_3-parabox--1">
+                    <div class="section_3-parabox--imgbox">
+                        <img src="/img/init-1.png" alt="Initiative-1" class="section_3-parabox--img">
+                    </div>
+                    <div class="section_3-parabox--para">
+                        <h3 class="section_3-parabox--heading">
+                            Academic Heights Public School
+                        </h3>
+                        <p class="section_3-parabox--text">
+                            Academic Heights Public School has been set up keeping in mind the ultimate vision of
+                            grooming achievers and leaders of the future. It is a continued effort of the makers of
+                            Kids Valley… play school, venturing into a formal schooling branch with same love and
+                            affection
+                            into a competitive educational market.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section_3-parabox section_3-parabox--2">
+                    <div class="section_3-parabox--imgbox">
+                        <img src="/img/init-2.jpg" alt="Initiative-2" class="section_3-parabox--img">
+                    </div>
+                    <div class="section_3-parabox--para">
+                        <h3 class="section_3-parabox--heading">
+                            Prismart
+                        </h3>
+                        <p class="section_3-parabox--text">
+                            Academic Heights Public School has been set up keeping in mind the ultimate vision of
+                            into a formal schooling branch with same love and affection
+                            into a competitive educational market.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section_3-parabox section_3-parabox--3">
+                    <div class="section_3-parabox--imgbox">
+                        <img src="/img/init-3.jpg" alt="Initiative-3" class="section_3-parabox--img">
+                    </div>
+                    <div class="section_3-parabox--para">
+                        <h3 class="section_3-parabox--heading">
+                            Rishihood University
+                        </h3>
+                        <p class="section_3-parabox--text">
+                            With expansion at pace, the maker of Kids Valley and AHPS are introducing a formal
+                            certification
+                            panel and arena for higher studies with Rishihood University that will be rooting in the
+                            branches of Education, Law, Agriculture, Commerce and Food technology. This university
+                            is on
+                            cards and will be inaugurated soon this year.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--   SECTION 4  -->
+        <div class="section_4">
+            <!--  Section-4 Top   -->
+            <h1 class="section_heading" style="color:white; margin: 1rem 0;">
+                Kids Valley Play School Value Chain
+            </h1>
+
+            <!--  Section-4 Bottom -->
+            <div class="section_4-row">
+                <!--  For device below phone-l  -->
+                <div class="features_row">
+                    <div class="feature_phone">
+                        <div class="feature_phone-div">
+                            <div class="feature_imagephone" id="feature_imagephone-1">
+                                <img src="/img/feature-img1.png">
+                            </div>
+                            <div class="feature_phone-content">
+                                <h4 class="feature_headingphone"> Health Check-up </h4>
+                                <div class="feature_paraphone">
+                                    We organize regular health check-up camps for providing
+                                    a healthy playschool environment to the little ones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature_phone">
+                        <div class="feature_phone-div">
+                            <div class="feature_imagephone feature_imagephone-1">
+                                <img src="/img/feature-img1.png">
+                            </div>
+                            <div class="feature_phone-content">
+                                <h4 class="feature_headingphone"> Health Check-up </h4>
+                                <div class="feature_paraphone">
+                                    We organize regular health check-up camps for providing
+                                    a healthy playschool environment to the little ones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature_phone">
+                        <div class="feature_phone-div">
+                            <div class="feature_imagephone feature_imagephone-1">
+                                <img src="/img/feature-img1.png">
+                            </div>
+                            <div class="feature_phone-content">
+                                <h4 class="feature_headingphone"> Health Check-up </h4>
+                                <div class="feature_paraphone">
+                                    We organize regular health check-up camps for providing
+                                    a healthy playschool environment to the little ones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature_phone">
+                        <div class="feature_phone-div">
+                            <div class="feature_imagephone feature_imagephone-1">
+                                <img src="/img/feature-img1.png">
+                            </div>
+                            <div class="feature_phone-content">
+                                <h4 class="feature_headingphone"> Health Check-up </h4>
+                                <div class="feature_paraphone">
+                                    We organize regular health check-up camps for providing
+                                    a healthy playschool environment to the little ones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features_row">
+                    <div class="feature_phone">
+                        <div class="feature_phone-div">
+                            <div class="feature_imagephone feature_imagephone-1">
+                                <img src="/img/feature-img1.png">
+                            </div>
+                            <div class="feature_phone-content">
+                                <h4 class="feature_headingphone"> Health Check-up </h4>
+                                <div class="feature_paraphone">
+                                    We organize regular health check-up camps for providing
+                                    a healthy playschool environment to the little ones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature_phone">
+                        <div class="feature_phone-div">
+                            <div class="feature_imagephone feature_imagephone-1">
+                                <img src="/img/feature-img1.png">
+                            </div>
+                            <div class="feature_phone-content">
+                                <h4 class="feature_headingphone"> Health Check-up </h4>
+                                <div class="feature_paraphone">
+                                    We organize regular health check-up camps for providing
+                                    a healthy playschool environment to the little ones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature_phone">
+                        <div class="feature_phone-div">
+                            <div class="feature_imagephone feature_imagephone-1">
+                                <img src="/img/feature-img1.png">
+                            </div>
+                            <div class="feature_phone-content">
+                                <h4 class="feature_headingphone"> Health Check-up </h4>
+                                <div class="feature_paraphone">
+                                    We organize regular health check-up camps for providing
+                                    a healthy playschool environment to the little ones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature_phone">
+                        <div class="feature_phone-div">
+                            <div class="feature_imagephone feature_imagephone-1">
+                                <img src="/img/feature-img1.png">
+                            </div>
+                            <div class="feature_phone-content">
+                                <h4 class="feature_headingphone"> Health Check-up </h4>
+                                <div class="feature_paraphone">
+                                    We organize regular health check-up camps for providing
+                                    a healthy playschool environment to the little ones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  For devices above phone-l  -->
+                <div class="features_row">
+                    <div class="feature">
+                        <div class="feature_side feature_side-front">
+                            <div class="feature_image feature_image-1"></div>
+                            <h4 class="feature_heading"> Health Check-up </h4>
+                        </div>
+                        <div class="feature_side feature_side-back">
+                            We organize regular health check-up camps for providing a healthy playschool
+                            environment to the little ones.
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature_side feature_side-front">
+                            <div class="feature_image feature_image-2"></div>
+                            <h4 class="feature_heading"> Montessori Toys </h4>
+                        </div>
+                        <div class="feature_side feature_side-back">
+                            Our curriculum includes learning through Montessori toys, to develop the fine
+                            motor
+                            skills in a child.
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature_side feature_side-front">
+                            <div class="feature_image feature_image-3"></div>
+                            <h4 class="feature_heading"> Modular Furniture </h4>
+                        </div>
+                        <div class="feature_side feature_side-back">
+                            Use of German-enabled technology helps us to create the masterpieces of modular
+                            furniture for our preschools.
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature_side feature_side-front">
+                            <div class="feature_image feature_image-4"></div>
+                            <h4 class="feature_heading"> Play-way methods </h4>
+                        </div>
+                        <div class="feature_side feature_side-back">
+                            We focus on developing a child holistically using play-way methods and do not
+                            enforce learning through books only
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features_row">
+                    <div class="feature">
+                        <div class="feature_side feature_side-front">
+                            <div class="feature_image feature_image-5 "></div>
+                            <h4 class="feature_heading">After School Fun </h4>
+                        </div>
+                        <div class="feature_side feature_side-back">
+                            Our programs such as Saturday Club and Activity Junction helps in engaging
+                            children
+                            in the after-school liveliness.
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature_side feature_side-front">
+                            <div class="feature_image feature_image-6"></div>
+                            <h4 class="feature_heading"> Prioritizing Hygiene </h4>
+                        </div>
+                        <div class="feature_side feature_side-back">
+                            We worship the place of learning and thus, maintaining hygiene around the school
+                            is
+                            always on our priority list.
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature_side feature_side-front">
+                            <div class="feature_image feature_image-7"></div>
+                            <h4 class="feature_heading">Teaching Aids </h4>
+                        </div>
+                        <div class="feature_side feature_side-back">
+                            Our specialized teaching aids help in imparting the lessons with efficiency and
+                            effectiveness for better retention.
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature_side feature_side-front">
+                            <div class="feature_image feature_image-8"></div>
+                            <h4 class="feature_heading">Kids Valley Academy </h4>
+                        </div>
+                        <div class="feature_side feature_side-back">
+                            Kids Valley Academy is running NTT courses for teachers looking forward to
+                            joining
+                            tiny
+                            tots by profession.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ALL SECTIONS END HERE -->
+
+        <!--  FOOTER  -->
+        <footer class="footer">
+            <div class="footer_widget-box">
+                <div class="footer_widget footer_widget-1">
+                    <p class="footer_widget-1-para">
+                        <span>Kids Valley</span> Play School instils a spirit of joy and fervour in children for
+                        learning new
+                        things and outshine in the competitive world. Being one of the most renowned nursery
+                        schools, Kids Valley has all that a growing toddler needs to complete his early
+                        education!
+                    </p>
+                    <ul class="footer_widget-1-para-points">
+                        <li><i class="fas fa-check"></i>Unique teaching methodologies </li>
+                        <li><i class="fas fa-check"></i>Technical pre school curriculum</li>
+                        <li><i class="fas fa-check"></i>Fosters holistic development </li>
+                        <li><i class="fas fa-check"></i>Creative in-house pedagogy </li>
+                    </ul>
+                </div>
+
+                <div class="footer_widget footer_widget-2">
+                    <ul class="footer_widget_links">
+                        <li>
+                            <a href="/pages/navbar/admission.html">
+                                <i class="fa fa-edit" style="font-size: 16px; font-weight: 600; margin-right: 5px;">
+                                </i> Apply For Admission
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/footer-pages/admission-process.html">
+                                <i class="fa fa-book" style="font-size: 16px; font-weight: 600; margin-right: 5px;">
+                                </i>Admission Process
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/footer-pages/adm-faq.html">
+                                <i class="fa fa-question-circle"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;">
+                                </i>Admission FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-cogs" style="font-size: 16px; font-weight: 600; margin-right: 5px;">
+                                </i>Programs </a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fa fa-users"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;">
+                                </i>About Us </a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fa fa-at"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;">
+                                </i>Contact Us </a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fa fa-suitcase"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;">
+                                </i>Careers</a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fa fa-info-circle"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;">
+                                </i>Term Of Use </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_widget footer_widget-3">
+                    <ul class="footer_widget_links">
+                        <li>
+                            <a href="#"><i class="fa fa-pencil-square"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;"></i>Apply For
+                                Franchise
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-btc"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;"></i>
+                                Why Kids Valley </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-check-square-o"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;"></i>
+                                Prerequisites </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-life-ring"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;"></i> Support
+                                System
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-quote-right"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;"></i>
+                                Testimonials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-thumbs-up"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;"></i>Do's &
+                                Dont's
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-rss-square"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;"></i> Kids
+                                Valley
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-info"
+                                    style="font-size: 16px; font-weight: 600; margin-right: 5px;"></i>
+                                Terms & Conditions </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_widget footer_widget-4">
+                    <h3 class="contact_form-heading">Connect to Us</h3>
+                    <div class="contact_form">
+                        <form action="backend.php">
+                            <div class="contact_form-input">
+                                <input type="text" name="myName" id="name" placeholder="Your Name"
+                                    class="contact_form-text">
+                            </div>
+
+                            <div class="contact_form-input">
+                                <input type="tel" name="myPhone" id="phone" placeholder="Contact Number"
+                                    class="contact_form-text">
+                            </div>
+
+                            <div class="contact_form-input">
+                                <input type="email" name="myEmail" id="mail" placeholder="Your Email"
+                                    class="contact_form-text">
+                            </div>
+
+                            <div class="contact_form-input">
+                                <textarea name="myQuery" id="message" placeholder="Your Message"
+                                    class="contact_form-textarea"></textarea>
+                            </div>
+
+                            <input type="submit" value="Send" class="contact_form-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="footer_copyright-1">
+                    <ul class="footer_copyright-link">
+                        <li><a href="#"> Disclaimer</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                        <li><a href="#"> Site Map</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_copyright-2">
+                    <p class="footer_copyright-2-text">Copyright © 2022- Kidsvalley Educations Pvt. Ltd.</p>
+                </div>
+
+                <div class="footer_copyright-3">
+                    <ul class="footer_copyright-social-links">
+                        <li><a href="#"> <i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"> <i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"> <i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_copyright-phone">
+                <div class="footer_copyright-phone-row">
+                    <div class="footer_copyright-phone-left">
+                        <ul>
+                            <li><a href="#"> Disclaimer</a></li>
+                            <li><a href="#"> Privacy Policy</a></li>
+                            <li><a href="#"> Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_copyright-phone-right">
+                        <ul>
+                            <li><a href="#"> <i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"> <i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"> <i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_copyright-phone-row">
+                    <p class="footer_copyright-phone-text">
+                        Copyright © 2022- Kidsvalley Educations Pvt. Ltd.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- </footer> FOOTER - END -->
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/carousel.js"></script>
+<script src="/js/nav.js"></script>
+
+</html>

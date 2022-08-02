@@ -1,0 +1,215 @@
+// This will contain whole block of header
+
+.header {
+    position: relative;
+    height: fit-content;
+    top: 0px;
+
+    &_upper {
+        // border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        background-color: $violet-1;
+        height: 2.6rem;
+    }
+
+    &_btnbox {
+        // border: 2px solid black;                       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 45rem;
+
+        &-1 {
+            // border: 1px solid yellow;
+            flex-basis: 45%;
+            min-width: fit-content;
+            display: flex;
+            justify-content: flex-end;            
+        }
+
+        &-2 {
+            // border: 1px solid yellow;
+            flex-basis: 50%;                            
+        }
+
+        &-btn {
+
+            &--1:link,
+            &--1:visited {
+                color: white;
+                font-weight: 700;
+                transition: all .4s;
+                margin-right: 2rem;
+            }
+
+            &--1:active,
+            &--1:hover {
+                color: $violet-2;
+            }
+
+            &--2:link,
+            &--2:visited {
+                color: $violet-1;
+                transition: all .4s;
+                background-color: $white;
+                padding: .5rem;
+                border-radius: 5px;
+                letter-spacing: .5px;
+            }
+
+            &--2:active,
+            &--2:hover {
+                background-color: $violet-2;
+            }
+        }
+    }
+}
+
+.leftarrow {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    top: 65%;
+    cursor: pointer;
+    left: 4%;
+    z-index: 1000;
+}
+
+.rightarrow {
+    position: absolute;
+    z-index: 1000;
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-primary);
+    top: 65%;
+    cursor: pointer;
+    left: 94%;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    &_slider {
+        // padding-bottom: 58vh;
+        display: flex;
+        width: 500%;
+        transition: all .4s;
+        height: 23rem;
+
+        .carousel_slide {
+            &-1 {
+                @include header-slider;
+                background-image: url(/img/slide-1.webp);
+                // animation: fade1 12s infinite;
+            }
+
+            &-2 {
+                @include header-slider;
+                background-image: url(/img/slide-2.jpg);
+                // animation: fade2 12s infinite;
+            }
+
+            &-3 {
+                @include header-slider;
+                background-image: url(/img/slide-3.webp);
+                // animation: fade3 12s infinite;
+            }
+
+            &-4 {
+                @include header-slider;
+                background-image: url(/img/slide-4.webp);
+                // animation: fade4 12s infinite;
+            }
+
+            &-5 {
+                @include header-slider;
+                background-image: url(/img/slide-5.webp);
+                // animation: fade5 12s infinite;
+            }
+        }
+    }
+
+    &_radio-btn {
+        display: none;
+
+        &:checked {
+            &:nth-of-type(1)~.carousel_nav {
+                .carousel_radio-label {
+                    &:nth-of-type(1) {
+                        background-color: violet;
+                    }
+                }
+            }
+
+            &:nth-of-type(2)~.carousel_nav {
+                .carousel_radio-label:nth-of-type(2) {
+                    background-color: violet;
+                }
+            }
+
+            &:nth-of-type(3)~.carousel_nav {
+                .carousel_radio-label:nth-of-type(3) {
+                    background-color: violet;
+                }
+            }
+
+            &:nth-of-type(4)~.carousel_nav {
+                .carousel_radio-label:nth-of-type(4) {
+                    background-color: violet;
+                }
+            }
+
+            &:nth-of-type(5)~.carousel_nav {
+                .carousel_radio-label:nth-of-type(5) {
+                    background-color: violet;
+                }
+            }
+
+            &:nth-of-type(1)~.carousel_slider {
+                transform: translate(0%);
+            }
+
+            &:nth-of-type(2)~.carousel_slider {
+                transform: translate(-20%);
+            }
+
+            &:nth-of-type(3)~.carousel_slider {
+                transform: translate(-40%);
+            }
+
+            &:nth-of-type(4)~.carousel_slider {
+                transform: translate(-60%);
+            }
+
+            &:nth-of-type(5)~.carousel_slider {
+                transform: translate(-80%);
+            }
+        }
+    }
+
+    &_nav {
+        display: flex;
+        order: 1;
+        justify-content: center;
+        position: absolute;
+        z-index: 1000;
+        top: 88%;
+        left: 42%;
+    }
+
+    &_radio-label {
+        border: 2px solid black;
+        display: block;
+        background-color: green;
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,272 @@
+.footer {
+	&_widget-box {
+		background: url(/img/foot-bnr.jpg);
+		height: fit-content;
+		background-size: contain;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include respond(phone) {
+			display: none;
+		}
+	}
+
+	&_widget {
+		// border: 1px solid yellow;
+		flex: 0 1 25%;
+		height: 19rem;
+		font-weight: 500;
+		padding: 1.4rem 1rem 0rem 1rem;
+		margin: 1rem 0;
+
+		&-1 {
+			@include respond(phone) {
+				display: none;
+			}
+
+			&-para {
+				text-align: justify;
+				line-height: 1.25;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+				>span {
+					color: #ea1550;
+				}
+
+				&-points {
+					margin-top: 1rem;
+					line-height: 1.4;
+					font-size: 1.2rem;
+
+					.fa-check {
+						padding-right: .5rem;
+					}
+				}
+			}
+		}
+
+		&-2,
+		&-3 {
+			font-family: 'Segoe UI', Tahoma, Geneva Verdana, sans-serif;
+			font-weight: 500;
+
+			.fa {
+				padding-right: .8rem;
+			}
+
+			@include respond(phone) {
+				display: none;
+			}
+		}
+
+		// below are the widget 2,3 links
+
+		&_links {
+			// border: 1px solid green;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+			padding-left: 3.3rem;
+
+			li {
+				flex-basis: 12%;
+
+				a {
+					text-align: left;
+
+					&:link,
+					&:visited {
+						color: black;
+						transition: all .5s;
+					}
+
+					&:hover,
+					&:active {
+						color: blue;
+					}
+				}
+			}
+		}
+
+		&-4 {
+			.contact_form {
+
+				:focus {
+					outline: none;
+				}
+
+				&-input {
+					// input div element 
+					padding: .5rem 0;
+
+					@include respond(tablet-s) {
+						::placeholder {
+							font-size: 11px;
+						}
+					}
+				}
+
+				&-text {
+					// input element
+					padding-left: .7rem;
+					width: 17rem;
+					height: 2.3rem;
+					border: 1px solid rgb(118, 118, 118);
+					border-radius: 5px;
+				}
+
+				&-textarea {
+					padding-left: .7rem;
+					height: 3.2rem;
+					width: 17rem;
+					resize: none;
+				}
+
+				&-submit {
+					background-color: $violet-1;
+					border-radius: 5px;
+					padding: .3rem 1rem;
+					font-size: 1.04rem;
+					color: white;
+				}
+			}
+		}
+	}
+
+
+	&_copyright {
+		@include respond(phone) {
+			display: none;
+		}
+
+		background-color: $secondary-2;
+		height: $copyright-height;
+		font-weight: 600;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+
+		&-1,
+		&-2,
+		&-3 {
+			flex-basis: 30%;
+		}
+
+		&-2-text {
+			margin-top: $foot-margin-top;
+		}
+
+		li {
+			display: inline-block;
+			margin-top: $foot-margin-top;
+
+			&:not(:first-child) {
+				margin-left: 2rem;
+			}
+		}
+
+		&-link,
+		&-social-links {
+			a {
+
+				&:link,
+				&:visited {
+					color: black;
+				}
+
+				&:hover,
+				&:active {
+					color: blue;
+				}
+			}
+		}
+	}
+
+	&_copyright-phone {
+		display: none;
+		// border: 1px solid red;
+
+		@include respond(phone) {
+			display: flex;
+			background-color: $secondary-2;
+			flex-direction: column;
+		}
+
+		&-row {
+			display: flex;
+			justify-content: center;
+			margin-bottom: .7rem;
+		}
+
+		&-left,
+		&-right {
+			// border: 1px solid green;
+			flex: 0 1 45%;
+			margin-top: $foot-margin-top;
+
+			>ul li {
+				a {
+
+					&:link,
+					&:visited {
+						color: black;
+						font-size: 1.1rem;
+					}
+
+					&:hover,
+					&:active {
+						color: blue;
+					}
+				}
+			}
+		}
+
+		&-left {
+			>ul {
+				// border: 1px solid red;
+				display: flex;
+
+				>li {
+					// border: 1px solid yellow;
+					font-weight: 600;
+					flex: 0 1 33%;
+					text-align: center;
+
+					>a {
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		&-right {
+
+			margin-left: 2rem;
+
+			>ul {
+				display: flex;
+				// border: 1px solid yellow;
+
+
+				>li {
+					// border: 1px solid black;
+					font-weight: 600;
+					flex: 0 1 15%;
+					text-align: right;
+
+					// text-align: right;
+					&:first-child {
+						margin-left: 3rem;
+					}
+				}
+			}
+		}
+
+		&-text {
+			font-size: 1.1rem;
+			font-weight: 600;
+		}
+	}
+}

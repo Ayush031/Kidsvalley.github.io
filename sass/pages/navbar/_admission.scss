@@ -1,0 +1,175 @@
+.admission {
+
+    &_header-slide {
+        background-image: url(/img/adm-bg2.jpg);
+        background-position: center;
+    }
+
+    &_section {
+        background-color: $violet-1;
+        padding: 1rem 0rem 3rem 0rem;
+
+        &-top {
+            @include section-center;
+            margin-bottom: 2rem;
+
+            &--heading {
+                text-align: center;
+                font-size: 2rem;
+                padding: 1rem;
+                margin: 0rem 13rem 1rem 13rem;
+                color: $white;
+            }
+        }
+    }
+
+    &_contact {
+        height: 26.5rem;
+
+        &-form {
+            box-shadow: 0rem 0rem -7rem rgba($black, 1);
+            background-color: rgb(246, 246, 246);
+            // border: 2.5px solid black;
+            border-radius: 48px;
+            overflow: hidden;
+            height: 27rem;
+
+            &--heading {
+                // border: 1px solid red;
+                margin: 4px;
+                text-align: center;
+                color: $violet-1;
+                font-size: 2rem;
+                padding: 1rem 0;
+            }
+
+            &--inputdiv {
+                // border: 1px solid yellow;
+                margin: 4px;
+
+                select,
+                input {
+                    &:focus {
+                        outline: none !important;
+                    }
+
+                    // border: 1px solid #888;
+                    padding: 1rem 3rem 1rem .5rem;
+                    width: 100%;
+                    color: #888;
+                }
+            }
+
+            form {
+                // border: 1px solid red;
+                margin: 4px;
+
+                .row {
+                    // border: 1px solid red;
+                    margin: 4px;
+
+                    .col-1-of-2 {
+                        margin: 4px;
+                        text-align: center;
+                        height: 15rem;
+                    }
+                }
+
+                .contact_form-submit {
+                    margin: .5rem .5rem;
+                    padding: .5rem 1rem;
+                }
+            }
+        }
+    }
+
+    &_bottom {
+        height: 36rem;
+        margin: 3px;
+
+
+        .col-1-of-2 {
+            margin: 3px 0;
+
+            .col-1-of-3 {
+                margin: 3px;
+            }
+        }
+
+        &-1 {
+            margin: 3px 0;
+            height: 100%;
+            color: grey;
+
+            p {
+                margin-left: 12rem;
+                margin-top: 3rem;
+                line-height: 1.5;
+                font-size: 1.15rem;
+                letter-spacing: .1px;
+                height: auto;
+                width: 18rem;
+            }
+        }
+
+        &-2 {
+            text-align: right;
+            height: 100%;
+
+            .row {
+                height: fit-content;
+                margin-top: 5rem;
+
+            }
+
+            &--skill {
+                box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
+                border-radius: 50%;
+                text-align: center;
+                margin: 3px 3px 2.5rem 3px;
+                width: 10rem;
+                height: 9rem;
+
+                i {
+                    transform: scale(2);
+                    margin: 1.5rem 0;
+                }
+
+                .skill-heading {
+                    margin-top: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+
+            #skill-1:hover {
+                background-color: forestgreen;
+                color: white;
+            }
+
+            #skill-2:hover {
+                background-color: yellowgreen;
+                color: white;
+            }
+
+            #skill-3:hover {
+                background-color: royalblue;
+                color: white;
+            }
+
+            #skill-4:hover {
+                background-color: purple;
+                color: white;
+            }
+
+            #skill-5:hover {
+                background-color: rgb(255, 51, 102);
+                color: white;
+            }
+
+            #skill-6:hover {
+                background-color: orangered;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.section_1 {
+
+    // border: 2px solid black;
+    &-row {
+        // border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 3rem;
+
+        @include respond(phone) {
+            // padding: 1rem 6rem;
+        }
+    }
+
+    &_para {
+        // border: 1px solid black;
+        color: white;
+        flex: 1 1 22%;
+        margin: 0 1rem;
+        border-bottom: 5px solid #f59e01;
+
+        @include respond(phone) {
+            flex: 1 1 100%;
+            margin: .5rem auto;
+        }
+
+        &-title {
+            font-size: 1.3rem;
+            padding-top: 4.5rem;
+            text-align: center;
+            text-transform: uppercase;
+
+            // border: 1px solid green;
+            @include respond(phone) {
+                padding-top: 5rem;
+                letter-spacing: 1px;
+                font-size: 1.7rem;
+            }
+        }
+
+        &-text {
+            // border: 1px solid red;
+            height: 20rem;
+            line-height: 1.5rem;
+            font-size: 1.06rem;
+            text-align: justify;
+            padding: 1.5rem;
+
+            @include respond(phone) {
+                height: auto;
+                padding: 1.5rem;
+                font-size: 1.5rem;
+                padding: 1.5rem 3rem 5rem 3rem;
+                letter-spacing: 1px;
+            }
+        }
+
+        &-1 {
+            background-color: #b1c642;
+        }
+
+        &-2 {
+            background-color: #ffc10d;
+        }
+
+        &-3 {
+            background-color: #ff5d52;
+        }
+
+        &-4 {
+            background-color: #68b9d8;
+        }
+    }
+
+
+}

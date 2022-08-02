@@ -1,0 +1,227 @@
+.section_4 {
+    background-color: $violet-1;
+    padding-bottom: 3.5rem;
+    width: 100%;
+
+    // border: 2px solid black;
+
+    &-row {
+        margin: 1rem 6rem 0 6rem;
+        // border: 1px solid white;
+
+        @include respond(phone-l) {
+            padding: 1rem 6rem 0 6rem;
+        }
+
+        @include respond(phone) {
+            padding: 1rem 0 0 0;
+            // margin: 1rem 4rem 0 4rem;
+            margin: 1rem;
+        }
+
+    }
+
+    .features_row {
+        // border: 1px solid yellow;
+        display: flex;
+        // flex-wrap: wrap;
+
+        @include respond(phone-l) {
+            display: block;
+        }
+    }
+}
+
+.feature_phone {
+    display: none;
+    cursor: initial;
+    height: 14rem;
+    margin: 1rem 1rem;
+
+    @include respond(phone-l) {
+        display: block;
+    }
+
+    @include respond(phone) {
+        height: auto;
+        flex: 1 1 100%;
+        margin: 3rem 5rem;
+    }
+
+    @include respond(phone-s) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .feature_phone-div {
+        border: 1px solid red;
+        background-color: $secondary-2;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .feature_imagephone {
+            // border: 1px solid black;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100%;
+            flex: 1 1 30%;
+            text-align: center;
+            margin-right: 1rem;
+
+            >img {
+                // border: 1px solid green;
+                margin-top: 1.7rem;
+                height: 70%;
+
+                @include respond(phone) {
+                    margin: 1.5rem;
+                    height: 13rem;
+                }
+            }
+        }
+
+        // #feature_imagephone-1 {
+        //     // border: 1px solid black;
+        //     background-image: url(/img/feature-img1.png);
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     height: 80%;
+        //     flex: 1 1 20%;
+        //     background-position: center;
+        // }
+
+        .feature_phone-content {
+            // border: 1px solid black;
+            flex: 1 1 65%;
+            display: flex;
+            flex-direction: column;
+            // padding: 0 3rem 0 1rem;
+
+            @include respond(phone-l) {
+                padding: 0 1rem;
+            }
+
+            .feature_headingphone {
+                // border: 1px solid red;
+                flex: 1 1 30%;
+                font-size: 1.8rem;
+                padding-top: 1.7rem;
+
+                @include respond(phone) {
+                    padding-top: 2.7rem;
+                }
+
+                @include respond(phone-l){
+                    padding-top: 0;
+                    margin-top: .5rem;
+                    margin-bottom: .25rem;
+                }
+            }
+
+            .feature_paraphone {
+                // border: 1px solid red;
+                font-size: 1.4rem;
+                font-weight: 600;
+                letter-spacing: .5px;
+                flex: 1 1 60%;
+
+                @include respond(phone-l) {
+                    margin: .25rem 0 .5rem 0; 
+                }
+            }
+        }
+    }
+}
+
+.feature {
+    // border: 1px solid red;
+    position: relative;
+    cursor: pointer;
+    height: 14rem;
+    flex: 0 1 23%;
+    margin: 1rem 1rem;
+    perspective: 150rem; // makes animation smooth and look 3d
+    // display: block;
+
+    @include respond(phone-l) {
+        display: none;
+    }
+
+    &_side {
+        background-color: $secondary-2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transition: all .9s;
+        backface-visibility: hidden; // make animation smooth
+
+        // @include respond(phone-l) {
+        //     display: none;
+        // }
+
+        // &-front {
+        //     @include respond(phone-l) {
+        //         display: none;
+        //     }
+        // }
+
+        &-back {
+            padding-top: 23%;
+            font-size: 1.1rem;
+            font-weight: 200;
+            text-align: center;
+            line-height: 1.5;
+            transform: rotateY(180deg);
+            // border: 1px solid red;
+
+            // @include respond(phone-l) {
+            //     display: none;
+            // }
+        }
+    }
+
+    &:hover &_side-front {
+        transform: rotateY(-180deg);
+
+        @include respond(phone-l) {
+            transform: rotateY(0);
+        }
+    }
+
+    &:hover &_side-back {
+        transform: rotateY(0);
+    }
+
+    &_image {
+        background: url(/img/feature-img1.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: cover;
+        top: 1.5rem;
+        left: 25%;
+        height: 7.5rem;
+        width: 7.5rem;
+
+        // @include respond(phone-l) {
+        //     display: none;
+        //     // display: inherit;
+        // }
+    }
+
+    &_heading {
+        font-size: 1.1rem;
+        position: absolute;
+        top: 75%;
+        left: 25%;
+
+        // @include respond(phone-l) {
+        //     display: none;
+        //     // display: inherit;
+        // }
+    }
+}

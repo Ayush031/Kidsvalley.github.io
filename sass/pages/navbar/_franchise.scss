@@ -1,0 +1,275 @@
+.franchise {
+
+    &_1 {
+        // border: 1px solid blue;
+        @include section-center;
+
+        &-container {
+            // border: 1px solid red;
+            margin-top: 1rem;
+
+            &--1 {
+                margin: 5px;
+            }
+
+            .franchise_1-form {
+                box-shadow: inset 0rem 0rem 1rem rgba($black, .6);
+                background-color: rgb(246, 246, 246);
+                border: 1px solid black;
+                border-radius: 48px;
+                overflow: hidden;
+                height: 34rem;
+
+                &--heading {
+                    // border: 1px solid red;
+                    margin: 4px;
+                    text-align: center;
+                    color: $violet-1;
+                    font-size: 2rem;
+                    padding: 1rem 0;
+                }
+
+                &--inputdiv {
+                    margin: 4px;
+                    margin-bottom: 1rem;
+
+                    select,
+                    input,
+                    textarea {
+                        border: 1px solid rgba(136, 136, 136, 0.412);
+                        padding: 1rem 3rem 1rem .5rem;
+                        width: 100%;
+                        color: #888;
+                        border-radius: 15px;
+
+                        &:focus {
+                            outline: none !important;
+                        }
+                    }
+
+                    #query {
+                        height: 16rem !important;
+                        resize: none;
+                    }
+                }
+
+                form {
+                    margin: 4px;
+
+                    .row {
+                        margin: 4px;
+                    }
+
+                    .contact_form-submit {
+                        margin: 0rem 2.5rem;
+                        padding: .5rem 1rem;
+                    }
+                }
+            }
+
+
+            &--2 {
+                h1 {
+                    text-align: center;
+                    color: $violet-1;
+                    padding-top: .5rem;
+                }
+
+                .franchise_1-video {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    &_2 {
+        margin-bottom: 2rem;
+
+        &-row {
+            padding: 0 4rem;
+        }
+
+        &-container {
+            text-align: center;
+            margin-bottom: 0;
+
+
+            &--heading {
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-top: 2rem;
+
+                &-1st {
+                    color: #8dc63f;
+                }
+
+                &-2nd {
+                    color: #00aeef;
+                }
+
+                &-3rd {
+                    color: #f26d7d;
+                }
+
+            }
+
+            &--subheading {
+                // border: 1px solid green;
+                color: grey;
+                margin-top: .5rem;
+            }
+        }
+    }
+
+    &_3 {
+        background-color: $grey-light-3;
+        height: 52rem;
+
+        .section_heading {
+            text-transform: capitalize;
+        }
+
+        &-container {
+            @include section-center;
+
+            &--1st {
+                height: 40rem;
+                line-height: 1.35;
+                letter-spacing: .2px;
+                font-size: 1.15rem;
+                text-align: justify;
+
+                p {
+                    margin-top: 2rem;
+                }
+            }
+
+            &--2nd {
+                img {
+                    height: 40rem;
+                }
+            }
+        }
+    }
+
+    &_4 {
+        height: fit-content;
+        @include section-center;
+        margin-bottom: 0rem;
+
+        &-container {
+            height: auto;
+
+            .row {
+                // @include section-center;
+                // margin: 1rem 5rem 1rem 5rem;
+            }
+
+            &--boxes {
+                margin: 1rem;
+                margin-left: 1rem;
+                height: 11rem;
+                display: flex;
+            }
+
+            .support_box {
+                &-right {
+                    padding: .4rem;
+                    width: 13%;
+                    font-size: 1.5rem;
+                    color: white;
+
+                    p {
+                        transform: rotate(-90deg);
+                    }
+                }
+
+                &-left {
+                    width: 100%;
+                    font-size: 1.05rem;
+
+                    ul {
+                        list-style-type: disc;
+                        margin-top: 1.8rem;
+                        margin-left: 2rem;
+                        line-height: 2;
+                        letter-spacing: .5px;
+                    }
+                }
+            }
+
+            #support_box-1 {
+                &--right {
+                    background-color: rgb(64, 38, 38);
+
+                    p {
+                        margin-top: 4.5rem;
+                    }
+                }
+
+                &--left {
+                    background: #f9b0b0 none repeat scroll 0 0;
+                }
+            }
+
+            #support_box-2 {
+                &--right {
+                    background-color: rgb(64, 38, 38);
+
+                    p {
+                        margin-top: 5.2rem;
+                    }
+
+                }
+
+                &--left {
+                    background: #f9b0b0 none repeat scroll 0 0;
+                }
+            }
+
+            #support_box-3 {
+                &--right {
+                    background-color: rgb(64, 38, 38);
+
+                    p {
+                        margin-top: 5.5rem;
+                    }
+                }
+
+                &--left {
+                    background: #f9b0b0 none repeat scroll 0 0;
+                }
+            }
+
+            #support_box-4 {
+                &--right {
+                    background-color: rgb(64, 38, 38);
+
+                    p {
+                        margin-top: 6rem;
+                    }
+                }
+
+                &--left {
+                    background: #f9b0b0 none repeat scroll 0 0;
+                }
+            }
+        }
+    }
+
+    &_5 {
+        @include section-center;
+        margin-bottom: 2rem;
+
+        &-container {
+            .row {
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            img {
+                margin: auto 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.section {
+    position: relative;
+    
+    &_headingbox {
+        text-align: center;
+        // border: 1px solid red;
+        padding-top: 1rem;
+    }
+
+    &_heading {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem ;
+        font-size: 35px;
+        color: $violet-3;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    &_heading-border {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 57vh;
+
+    &_heading {
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+}
