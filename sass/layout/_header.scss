@@ -104,31 +104,31 @@
         .carousel_slide {
             &-1 {
                 @include header-slider;
-                background-image: url(/img/slide-1.webp);
+                background-image: url(/kidsvalley.github.io/img/slide-1.webp);
                 // animation: fade1 12s infinite;
             }
 
             &-2 {
                 @include header-slider;
-                background-image: url(/img/slide-2.jpg);
+                background-image: url(/kidsvalley.github.io/img/slide-2.jpg);
                 // animation: fade2 12s infinite;
             }
 
             &-3 {
                 @include header-slider;
-                background-image: url(/img/slide-3.webp);
+                background-image: url(/kidsvalley.github.io/img/slide-3.webp);
                 // animation: fade3 12s infinite;
             }
 
             &-4 {
                 @include header-slider;
-                background-image: url(/img/slide-4.webp);
+                background-image: url(/kidsvalley.github.io/img/slide-4.webp);
                 // animation: fade4 12s infinite;
             }
 
             &-5 {
                 @include header-slider;
-                background-image: url(/img/slide-5.webp);
+                background-image: url(/kidsvalley.github.io/img/slide-5.webp);
                 // animation: fade5 12s infinite;
             }
         }

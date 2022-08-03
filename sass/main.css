@@ -323,7 +323,7 @@ ul {
 }
 
 .section_2-videobox {
-  background-image: url(/img/video-back.png);
+  background-image: url(/kidsvalley.github.io/img/video-back.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25rem;
@@ -544,7 +544,6 @@ ul {
 }
 
 .feature_phone .feature_phone-div {
-  border: 1px solid red;
   background-color: #bbd4eb;
   display: flex;
   height: 100%;
@@ -669,7 +668,7 @@ ul {
 }
 
 .feature_image {
-  background: url(/img/feature-img1.png);
+  background: url(/kidsvalley.github.io/img/feature-img1.png);
   background-repeat: no-repeat;
   position: absolute;
   background-size: cover;
@@ -722,7 +721,7 @@ ul {
 }
 
 .about_slide {
-  background-image: url(/img/about-page/about-slide.jpg);
+  background-image: url(/kidsvalley.github.io/img/about-page/about-slide.jpg);
 }
 
 .about_slide-heading {
@@ -845,7 +844,7 @@ ul {
 }
 
 .admission_header-slide {
-  background-image: url(/img/adm-bg2.jpg);
+  background-image: url(/kidsvalley.github.io/img/adm-bg2.jpg);
   background-position: center;
 }
 
@@ -1407,7 +1406,7 @@ ul {
   height: 100%;
   flex-basis: 100%;
   padding: 2rem 0 6rem 0;
-  background-image: url(/img/nav_gallery.jpg);
+  background-image: url(/kidsvalley.github.io/img/nav_gallery.jpg);
   text-align: center;
 }
 
@@ -1743,7 +1742,7 @@ ul {
   height: 100%;
   flex-basis: 100%;
   padding: 2rem 0 6rem 0;
-  background-image: url(/img/slide-1.webp);
+  background-image: url(/kidsvalley.github.io/img/slide-1.webp);
 }
 
 .carousel_slider .carousel_slide-2 {
@@ -1751,7 +1750,7 @@ ul {
   height: 100%;
   flex-basis: 100%;
   padding: 2rem 0 6rem 0;
-  background-image: url(/img/slide-2.jpg);
+  background-image: url(/kidsvalley.github.io/img/slide-2.jpg);
 }
 
 .carousel_slider .carousel_slide-3 {
@@ -1759,7 +1758,7 @@ ul {
   height: 100%;
   flex-basis: 100%;
   padding: 2rem 0 6rem 0;
-  background-image: url(/img/slide-3.webp);
+  background-image: url(/kidsvalley.github.io/img/slide-3.webp);
 }
 
 .carousel_slider .carousel_slide-4 {
@@ -1767,7 +1766,7 @@ ul {
   height: 100%;
   flex-basis: 100%;
   padding: 2rem 0 6rem 0;
-  background-image: url(/img/slide-4.webp);
+  background-image: url(/kidsvalley.github.io/img/slide-4.webp);
 }
 
 .carousel_slider .carousel_slide-5 {
@@ -1775,7 +1774,7 @@ ul {
   height: 100%;
   flex-basis: 100%;
   padding: 2rem 0 6rem 0;
-  background-image: url(/img/slide-5.webp);
+  background-image: url(/kidsvalley.github.io/img/slide-5.webp);
 }
 
 .carousel_radio-btn {
@@ -1888,7 +1887,7 @@ ul {
 }
 
 .footer_widget-box {
-  background: url(/img/foot-bnr.jpg);
+  background: url(/kidsvalley.github.io/img/foot-bnr.jpg);
   height: fit-content;
   background-size: contain;
   display: flex;
